@@ -1,0 +1,113 @@
+.home{
+    color:Brown;
+    font-weight:bold;
+    font-size:20px;
+  }
+  .live{
+    color:Brown;
+    font-weight:bold;
+    font-size:20px;
+  }
+  .country{
+    color:Brown;
+    font-weight:bold;
+    font-size:20px;
+  }
+  .about{
+    color:Brown;
+    font-weight:bold;
+    font-size:20px;
+  }
+  .carousel-indicators{
+    list-style-type:none;
+    justify-content: center;
+  }
+  a{
+    font-family: "Lucida Console";
+    padding:2px;
+  }
+  .line{
+    padding:1px;
+    background-color:red;
+  }
+  .container{
+    position:absolute;
+    background-image:url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBBC_News_%2528TV_channel%2529&psig=AOvVaw1nTfIHUYi98Znn4EYg-PuQ&ust=1677336652772000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCowI20rv0CFQAAAAAdAAAAABAE") ;
+    left: 40px;
+    top:5px;
+    font-size: 30px;
+  }
+  .flex-container{
+    background-color: aquamarine;
+    display:flex;
+    padding: 55vw;
+    padding-left: 40vw;
+    margin: 5vh;
+    position: absolute;
+  }
+
+
+
+  span.live-icon {
+    display: inline-block;
+    position: relative;
+    top: calc(50% - 5px);
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 155px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    z-index: 1;
+ }
+  span.live-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: live 1s ease-in-out infinite;
+    z-index: -1;
+ }
+  @keyframes live {
+    0% {
+      transform: scale(1, 1);
+   }
+    100% {
+      transform: scale(3.5, 3.5);
+      background-color: rgba(255, 0, 0, 0);
+   }
+ }
+  small {
+    position: absolute;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, .5);
+    bottom: 2rem;
+ }
+  small b {
+    font-weight: bold;
+    color: rgba(255, 255, 255, .8);
+    z-index: -1;
+ }
+  @media only screen and (max-width: 500px) {
+    .toolbar {
+      flex-direction: column;
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+    .btn {
+      width: 250px;
+   }
+    span.live-icon {
+      position: absolute;
+      right: 20px;
+   }
+ }
+  @media only screen and (max-width: 350px) {
+    .btn {
+      width: 100%;
+   }
+ }
+  
